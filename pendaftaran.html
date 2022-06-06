@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SMP Kristen Petra 2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+    <!-- link css -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- link icon -->
+    <script src="https://kit.fontawesome.com/69f54c2f23.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container">
+        <a class="navbar-brand text-white" href="#">
+          <img src="gambar/logo.png" alt="" width="50" class="d-inline-block justify-content-start" />
+          SMP Kristen Petra 2
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="index.html">HOMEPAGE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="faslitas.html">FASILITAS</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">KEGIATAN</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="kegiatan_sekolah.html">KEGIATAN SEKOLAH</a></li>
+                <li><a class="dropdown-item" href="ekstrakulikuler.html">EKSTRAKULIKULER</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="gema_petra.html">GEMA PETRA</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" style="font-weight: bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> PENERIMAAN SISWA BARU </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#" style="font-weight: bold">PENDAFTARAN</a></li>
+                <li><a class="dropdown-item" href="beasiswa.html">FORM BEASISWA</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="contact.html">CONTACT US</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- end navbar -->
+
+    <!-- form pendaftaran -->
+    <div class="form-pendaftaran">
+      <div class="container">
+        <form method="post" action="pendaftaran.php">
+          <div class="row text-center mt-5">
+            <div class="col-md">
+              <h4>PENDAFTARAN SISWA BARU 2022/2023</h4>
+            </div>
+          </div>
+
+          <div class="row text-center mt-3">
+            <div class="col-md">
+              <h6 class="fw-bold">Registrasi Peserta Didik</h6>
+            </div>
+          </div>
+
+          <div class="row justify-content-center mb-2">
+            <div class="col-md-2">
+              <label class="form-label">Jenis pendaftaran</label>
+            </div>
+            <div class="col-md-4">
+              <select name="jenis_pendaftaran" class="form-select form-select-sm" required>
+                <option value=""></option>
+                <option value="Siswa Baru">Siswa Baru</option>
+                <option value="Pindahan">Pindahan</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row justify-content-center mb-2">
+            <div class="col-md-2">
+              <label class="form-label">Asal sekolah</label>
+            </div>
+            <div class="col-md-4">
+              <input type="text" name="asal_sekolah" class="form-control" required />
+            </div>
+          </div>
+
+          <div class="row text-center mt-3">
+            <div class="col-md">
+              <h6 class="fw-bold">Data Pribadi Siswa</h6>
+            </div>
+          </div>
+
+          <div class="row justify-content-center mb-2">
+            <div class="col-md-2">
+              <label class="form-label">Nama lengkap</label>
+            </div>
+            <div class="col-md-4">
+              <input type="text" name="nama_siswa" class="form-control" required />
+            </div>
+          </div>
+
+          <div class="row justify-content-center mb-2">
+            <div class="col-md-2">
+              <label class="form-label">Jenis kelamin</label>
+            </div>
+            <div class="col-md-4">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="jenis_kelamin" id="inlineRadio1" value="P" />
+                <label class="form-check-label">Perempuan</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="jenis_kelamin" id="inlineRadio2" value="L" />
+                <label class="form-check-label">Laki-laki</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="row justify-content-center mb-2">
+            <div class="col-md-2">
+              <label class="form-label">NISN</label>
+            </div>
+            <div class="col-md-4">
+              <input type="text" name="nisn" class="form-control" required />
+            </div>
+          </div>
+
+          <div class="row justify-content-center mb-2">
+            <div class="col-md-2">
+              <label class="form-label">NIK</label>
+            </div>
+            <div class="col-md-4">
+              <input type="text" name="nik" class="form-control" required />
+            </div>
+          </div>
+
+          <div class="row justify-content-center mb-2">
+            <div class="col-md-2">
+              <label class="form-label">Tempat lahir</label>
+            </div>
+            <div class="col-md-4">
+              <input type="text" name="tempat_lahir" class="form-control" required />
+            </div>
+          </div>
+
+          <div class="row justify-content-center mb-2">
+            <div class="col-md-2">
+              <label class="form-label">Tanggal lahir</label>
+            </div>
+            <div class="col-md-4">
+              <input type="date" name="tgl_lahir" class="form-control" required />
+            </div>
+          </div>
+
+          <div class="row justify-content-center mb-2">
+            <div class="col-md-2">
+              <label class="form-label">Agama</label>
+            </div>
+            <div class="col-md-4">
+              <select name="agama" class="form-select form-select-sm" required>
+                <option value=""></option>
+                <option value="Buddha">Buddha</option>
+                <option value="Hindhu">Hindhu</option>
+                <option value="Islam">Islam</option>
+                <option value="Katolik">Katolik</option>
+                <option value="Kristen">Kristen</option>
+                <option value="Konghucu">Konghucu</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row justify-content-center mb-2">
+            <div class="col-md-2">
+              <label class="form-label">Alamat</label>
+            </div>
+            <div class="col-md-4">
+              <input type="text" name="alamat" class="form-control" required />
+            </div>
+          </div>
+
+          <div class="row justify-content-center mb-2">
+            <div class="col-md-2">
+              <label class="form-label">Tempat tinggal</label>
+            </div>
+            <div class="col-md-4">
+              <select name="tempat_tinggal" class="form-select form-select-sm" required>
+                <option value=""></option>
+                <option value="Bersama orang tua">Bersama orang tua</option>
+                <option value="Tidak bersama orang tua">Tidak bersama orang tua</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row justify-content-center mb-2">
+            <div class="col-md-2">
+              <label class="form-label">Anak ke berapa</label>
+            </div>
+            <div class="col-md-4">
+              <input type="number" name="anak_ke" min="1" max="20" class="form-control" required />
+            </div>
+          </div>
+
+          <div class="row justify-content-center mb-2">
+            <div class="col-md-2">
+              <label class="form-label">Nomor HP</label>
+            </div>
+            <div class="col-md-4">
+              <input type="tel" name="no_hp_siswa" class="form-control" required />
+            </div>
+          </div>
+
+          <div class="row justify-content-center mb-2">
+            <div class="col-md-2">
+              <label class="form-label">Email</label>
+            </div>
+            <div class="col-md-4">
+              <input type="email" name="email" class="form-control" required />
+            </div>
+          </div>
+
+          <div class="row text-center mt-3">
+            <div class="col-md">
+              <h6 class="fw-bold">Data Orang Tua</h6>
+            </div>
+          </div>
+
+          <div class="row justify-content-center mb-2">
+            <div class="col-md-2">
+              <label class="form-label">Nama Ayah</label>
+            </div>
+            <div class="col-md-4">
+              <input type="text" name="nama_ayah" class="form-control" required />
+            </div>
+          </div>
+
+          <div class="row justify-content-center mb-2">
+            <div class="col-md-2">
+              <label class="form-label">Tahun lahir ayah</label>
+            </div>
+            <div class="col-md-4">
+              <input type="number" name="thn_lahir_ayah" min="1800" max="2022" class="form-control" required />
+            </div>
+          </div>
+
+          <div class="row justify-content-center mb-2">
+            <div class="col-md-2">
+              <label class="form-label">Pendidikan ayah</label>
+            </div>
+            <div class="col-md-4">
+              <select name="pendidikan_ayah" class="form-select form-select-sm" required>
+                <option value=""></option>
+                <option value="SD">SD sederajat</option>
+                <option value="SMP">SMP sederajat</option>
+                <option value="SMA">SMA sederajat</option>
+                <option value="D1">D1</option>
+                <option value="D2">D2</option>
+                <option value="D3">D3</option>
+                <option value="D4">D4</option>
+                <option value="S1">S1</option>
+                <option value="S2">S2</option>
+                <option value="S3">S3</option>
+                <option value="Tidak sekolah">Tidak sekolah</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row justify-content-center mb-2">
+            <div class="col-md-2">
+              <label class="form-label">Pekerjaan ayah</label>
+            </div>
+            <div class="col-md-4">
+              <select name="pekerjaan_ayah" class="form-select form-select-sm" required>
+                <option value=""></option>
+                <option value="Buruh">Buruh</option>
+                <option value="Karyawan Swasta">Karyawan Swasta</option>
+                <option value="Wiraswasta">Wiraswasta</option>
+                <option value="PNS/TNI/POLRI">PNS/TNI/POLRI</option>
+                <option value="Lain-lain">Lain-lain</option>
+                <option value="Tidak bekerja">Tidak bekerja</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row justify-content-center mb-2">
+            <div class="col-md-2">
+              <label class="form-label">Nomor HP Ayah</label>
+            </div>
+            <div class="col-md-4">
+              <input type="tel" name="no_hp_ayah" class="form-control" required />
+            </div>
+          </div>
+
+          <div class="row justify-content-center mb-2">
+            <div class="col-md-2">
+              <label class="form-label">Nama Ibu</label>
+            </div>
+            <div class="col-md-4">
+              <input type="text" name="nama_ibu" class="form-control" required />
+            </div>
+          </div>
+
+          <div class="row justify-content-center mb-2">
+            <div class="col-md-2">
+              <label class="form-label">Tahun lahir ibu</label>
+            </div>
+            <div class="col-md-4">
+              <input type="number" name="thn_lahir_ibu" min="1800" max="2022" class="form-control" required />
+            </div>
+          </div>
+
+          <div class="row justify-content-center mb-2">
+            <div class="col-md-2">
+              <label class="form-label">Pendidikan ibu</label>
+            </div>
+            <div class="col-md-4">
+              <select name="pendidikan_ibu" class="form-select form-select-sm" required>
+                <option value=""></option>
+                <option value="SD">SD sederajat</option>
+                <option value="SMP">SMP sederajat</option>
+                <option value="SMA">SMA sederajat</option>
+                <option value="D1">D1</option>
+                <option value="D2">D2</option>
+                <option value="D3">D3</option>
+                <option value="D4">D4</option>
+                <option value="S1">S1</option>
+                <option value="S2">S2</option>
+                <option value="S3">S3</option>
+                <option value="Tidak sekolah">Tidak sekolah</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row justify-content-center mb-2">
+            <div class="col-md-2">
+              <label class="form-label">Pekerjaan ibu</label>
+            </div>
+            <div class="col-md-4">
+              <select name="pekerjaan_ibu" class="form-select form-select-sm" required>
+                <option value=""></option>
+                <option value="Buruh">Buruh</option>
+                <option value="Karyawan Swasta">Karyawan Swasta</option>
+                <option value="Wiraswasta">Wiraswasta</option>
+                <option value="PNS/TNI/POLRI">PNS/TNI/POLRI</option>
+                <option value="Lain-lain">Lain-lain</option>
+                <option value="Tidak bekerja">Tidak bekerja</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row justify-content-center mb-2">
+            <div class="col-md-2">
+              <label class="form-label">Nomor HP ibu</label>
+            </div>
+            <div class="col-md-4">
+              <input type="tel" name="no_hp_ibu" class="form-control" required />
+            </div>
+          </div>
+
+          <div class="row justify-content-center mb-5 text-center">
+            <div class="col-md-2">
+              <button class="btn btn-primary" type="submit">Submit form</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- end form pendaftaran -->
+
+    <!-- footer -->
+    <footer>
+      <div class="container">
+        <div class="row text-center text-white">
+          <div class="col-md">
+            <h5 class="mt-3 mb-0">SMP Kristen Petra 2</h5>
+            <p>
+              Jl. Embong Wungu No.2, Embong Kaliasin <br />
+              Kec. Genteng, Kota SBY, Jawa Timur <br />
+              60271
+            </p>
+            <p>
+              Telp. (031) 5483662, 5483665 <br />
+              <a href="https://api.whatsapp.com/send?phone=081331860575" class="text-white">Whatsapp 081331860575</a>
+            </p>
+          </div>
+        </div>
+        <div class="row text-center pt-2 pb-4 justify-content-center">
+          <div class="col-md-3">
+            <a href="https://www.instagram.com/smpkristenpetra2/" class="text-white" target="_blank">
+              <h5><i class="fa-brands fa-instagram"></i> smpkristenpetra2</h5>
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="https://www.youtube.com/channel/UCY_jKRy6HNlm-0JWP12UI5w" class="text-white" target="_blank">
+              <h5><i class="fa-brands fa-youtube"></i> SMP Kristen Petra 2</h5>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
